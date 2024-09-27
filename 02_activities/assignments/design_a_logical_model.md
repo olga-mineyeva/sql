@@ -15,7 +15,9 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
-Your answer...
+Both tables have privacy issues.
+The Type 1 table needs an agreement (permission request) for the data collection.
+The Type 2 table maintaining versioned history needs permission requests even more so because the data is private and can be used for trend analysis. 
 ```
 
 ## Question 4
@@ -23,7 +25,11 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
-Your answer...
+The AdventureWorks Schema is much more detailed and more organized.
+For example, the tables are organized into departments and the information related to the same topic is split
+into smaller chunks (order info is slit between SalesOrderHeader, SalesOrderDetail, SalesOrderReason tables).
+I would do similar splits for order and book tables, making tables for special order details, book price history, etc, rather than keeping everything about order or books in 1 corresponding table. 
+
 ```
 
 # Criteria
@@ -50,3 +56,5 @@ Checklist:
 - [ ] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack at `#cohort-4-help`. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
+<img width="194" alt="bookshoplogical_assignment_1_task3" src="https://github.com/user-attachments/assets/1c374f94-ddf9-4f9b-afab-0abcf3224004">
+<img width="439" alt="bookshoplogical_assignment_1" src="https://github.com/user-attachments/assets/b792930d-e310-4a91-aa06-666c21156b67">
